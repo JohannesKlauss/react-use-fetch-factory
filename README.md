@@ -57,6 +57,11 @@ export function ProductsList(props) {
 
 Pretty neat, eh?
 
+## What this is not
+This hook is just an abstraction for the data selecting and fetching logic you need to build
+inside your components. This is not handling the fetching and selecting logic itself. You need
+to provide that yourself via selectors and redux middleware with sagas, thunks, etc.
+
 ## Motivation & How it works
 Hooks are a great way to make our components leaner. With the release of react-redux 7 we
 can finally use Hooks to provide our store to components. Previously we had to use `connect` to
