@@ -2,7 +2,7 @@ import {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {Action} from 'redux';
 
-export function useFetchFactory<TState, TSelected>(
+export default function useFetchFactory<TState, TSelected>(
   selector: (state: TState) => TSelected,
   fetchActionCreator: () => Action,
   emptyArrayAsFalsy: boolean = false
